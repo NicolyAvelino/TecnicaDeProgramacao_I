@@ -1,0 +1,1 @@
+// Faça  um programa  na  Linguagem Javaque  receba  um  número  e mostre o resto da divisão por 6.
