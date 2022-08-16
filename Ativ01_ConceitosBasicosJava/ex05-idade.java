@@ -1,1 +1,1 @@
-// Faça  um programa  na  Linguagem Javaque  leia  a  idade  de  uma pessoa expressa em ano, mês e dia e mostre-as em dias.
+// Faça  um programa  na  Linguagem Java que  leia  a  idade  de  uma pessoa expressa em ano, mês e dia e mostre-as em dias.
