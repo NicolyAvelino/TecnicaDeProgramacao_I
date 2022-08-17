@@ -1,1 +1,0 @@
-// Faça um programa na Linguagem Java que leia dois valores numéricos e apresentar a diferença do maior para o menor
