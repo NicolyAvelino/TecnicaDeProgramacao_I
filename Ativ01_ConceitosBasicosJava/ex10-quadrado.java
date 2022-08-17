@@ -1,6 +1,6 @@
 // Faça um programa na Linguagem Java para efetuar a leitura de um número inteiro e apresentar o resultado do quadrado desse número
 import java.util.Scanner;
-public class ex10-quadrado{ 
+public class Main{ 
 	public static void main(String[] args) {
         int num;
         Scanner sc = new Scanner(System.in);

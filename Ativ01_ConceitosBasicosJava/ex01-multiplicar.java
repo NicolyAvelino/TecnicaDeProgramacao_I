@@ -1,6 +1,6 @@
 // Faça um  programa  na  Linguagem Java que  receba  2  números  e apresente a multiplicação dos dois números.
 import java.util.Scanner;
-public class ex01-multiplicar {
+public class Main {
 	public static void main(String[] args) {
 		int n1,n2, mult;
 		Scanner sc = new Scanner(System.in);

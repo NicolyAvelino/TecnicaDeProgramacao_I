@@ -1,7 +1,7 @@
 // Faça  um programa  na  Linguagem Java que  calcule  a  área  da circunferência.
 // Fórmula => (A = π r²)
 import java.util.Scanner;
-public class ex06-areaC {
+public class Main {
 	public static void main(String[] args) {
        double r, areaC;
 
