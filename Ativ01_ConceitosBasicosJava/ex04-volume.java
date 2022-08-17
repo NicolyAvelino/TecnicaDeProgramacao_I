@@ -2,14 +2,24 @@
 import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {       
-        double r, alt, vol;
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Digite o valor do raio: ");
-        r = sc.nextDouble();
-        System.out.print("Digite o valor da altura: ");
-        alt = sc.nextDouble();
-        vol = 3.14159 * (r * r) * alt;
-              
-        System.out.printf("O valor do volume é %.2fcm³", vol);
+                // declaração de variáveis
+                double r, alt, vol;
+
+                // cria um objeto scanner
+                Scanner sc = new Scanner(System.in);
+
+                // Entrada de dados
+                System.out.print("Digite o valor do raio: ");
+                r = sc.nextDouble();
+
+                // Entrada de dados
+                System.out.print("Digite o valor da altura: ");
+                alt = sc.nextDouble();
+
+                // cálculo da formúla  
+                vol = 3.14159 * (r * r) * alt;
+
+                // saida de dados
+                System.out.printf("O valor do volume é %.2fcm³", vol);
 	}
 }

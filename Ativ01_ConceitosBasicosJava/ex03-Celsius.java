@@ -2,13 +2,21 @@
 // A formula de conversão é C <--(F -32) * (5/9), sendo f a temperatura em Fahrenheit e C a temperatura em Celsius.
 import java.util.Scanner;
 public class Main {
-	public static void main(String[] args) {
-        double F, formula;
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Digite a temperatura em graus Fahrenheit: ");
-        F = sc.nextDouble();
-        // C <--(F -32) * (5/9)
-        formula = (F - 32) * 5/9;
-        System.out.printf("A conversão de %.1f°F para grau Celsius é %.3f°C",F,formula);
+        public static void main(String[] args) {
+                // declaração de variáveis
+                double F, formula;
+
+                // cria um objeto scanner
+                Scanner sc = new Scanner(System.in);
+
+                // Entrada de dados
+                System.out.print("Digite a temperatura em graus Fahrenheit: ");
+                F = sc.nextDouble();
+
+                // cálculo da formúla C <--(F -32) * (5/9)
+                formula = (F - 32) * 5/9;
+
+                // saida de dados
+                System.out.printf("A conversão de %.1f°F para grau Celsius é %.3f°C",F,formula);
 	}
 }
