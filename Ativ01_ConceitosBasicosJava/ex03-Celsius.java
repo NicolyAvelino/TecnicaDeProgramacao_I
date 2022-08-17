@@ -3,12 +3,12 @@
 import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
-              double F, formula;
-              Scanner sc = new Scanner(System.in);
-              System.out.print("Digite a temperatura em graus Fahrenheit: ");
-              F = sc.nextDouble();
-              // C <--(F -32) * (5/9)
-              formula = (F - 32) * 5/9;
-              System.out.printf("A conversão de %.1f°F para grau Celsius é %.3f°C",F,formula);
+        double F, formula;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite a temperatura em graus Fahrenheit: ");
+        F = sc.nextDouble();
+        // C <--(F -32) * (5/9)
+        formula = (F - 32) * 5/9;
+        System.out.printf("A conversão de %.1f°F para grau Celsius é %.3f°C",F,formula);
 	}
 }

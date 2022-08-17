@@ -4,13 +4,13 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
        
-       double c, f;
-       Scanner sc = new Scanner(System.in);
-       System.out.print("Digite a temperatura em graus Celsius: ");
-	c = sc.nextDouble();
-       
-       f = (9 * c + 160) / 5;
-       
-       System.out.printf("A conversão de %.1f °C para Fahrenheit é de %.1f °F", c,f);
+              double c, f;
+              Scanner sc = new Scanner(System.in);
+              System.out.print("Digite a temperatura em graus Celsius: ");
+              c = sc.nextDouble();
+              
+              f = (9 * c + 160) / 5;
+              
+              System.out.printf("A conversão de %.1f °C para Fahrenheit é de %.1f °F", c,f);
 	}
 }

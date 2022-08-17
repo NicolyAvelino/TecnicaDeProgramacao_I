@@ -3,14 +3,14 @@
 import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
-       double r, areaC;
+              double r, areaC;
 
-       Scanner sc = new Scanner(System.in);
-       System.out.print("Digite o valor do raio: ");
-       r = sc.nextDouble();
-       
-       areaC = 3.14159 * (r * r);
+              Scanner sc = new Scanner(System.in);
+              System.out.print("Digite o valor do raio: ");
+              r = sc.nextDouble();
+              
+              areaC = 3.14159 * (r * r);
 
-       System.out.printf("A área da circunferência é %.2fm²", areaC);
+              System.out.printf("A área da circunferência é %.2fm²", areaC);
 	}
 }

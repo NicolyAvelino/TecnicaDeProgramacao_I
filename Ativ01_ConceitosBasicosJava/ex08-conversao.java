@@ -2,17 +2,17 @@
 import java.util.Scanner;
 public class Main{ 
 	public static void main(String[] args) {
-                double cota, qtDolar,conversao;
-                Scanner sc = new Scanner(System.in);
+        double cota, qtDolar,conversao;
+        Scanner sc = new Scanner(System.in);
 
-                System.out.print("O valor da cotação do dólar: ");
-                cota = sc.nextDouble();
+        System.out.print("O valor da cotação do dólar: ");
+        cota = sc.nextDouble();
 
-                System.out.print("Quantidade de dólares disponível: ");
-                qtDolar = sc.nextDouble();
+        System.out.print("Quantidade de dólares disponível: ");
+        qtDolar = sc.nextDouble();
                 
-                conversao = cota * qtDolar;
+        conversao = cota * qtDolar;
 
-                System.out.printf("O valor da conversão de Dólar para real é %.2f reais.", conversao);
+        System.out.printf("O valor da conversão de Dólar para real é %.2f reais.", conversao);
 	}
 }
