@@ -1,0 +1,1 @@
+// Faça um programana LinguagemJavaqueleia3(três)valoresinteiroseapresente os 3 números em ordem crescente.
