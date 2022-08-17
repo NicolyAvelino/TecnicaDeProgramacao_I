@@ -17,6 +17,6 @@ public class Main {
                 formula = (F - 32) * 5/9;
 
                 // saida de dados
-                System.out.printf("A conversão de %.1f°F para grau Celsius é %.3f°C",F,formula);
+                System.out.printf("A conversão de %.1f°F para grau Celsius é %.1f°C",F,formula);
 	}
 }

@@ -9,11 +9,11 @@ public class Main {
                 Scanner sc = new Scanner(System.in);
 
                 // Entrada de dados
-                System.out.print("Digite o valor do raio: ");
+                System.out.print("Digite o valor do raio (cm): ");
                 r = sc.nextDouble();
 
                 // Entrada de dados
-                System.out.print("Digite o valor da altura: ");
+                System.out.print("Digite o valor da altura (cm): ");
                 alt = sc.nextDouble();
 
                 // cálculo da formúla  

@@ -22,6 +22,6 @@ public class Main{
         n2 = aux;
 
         // saida de dados
-        System.out.printf("Valores %d e %d.",n1,n2);	
+        System.out.printf("Valores 1º = %d; 2º = %d.",n1,n2);	
     }
 }

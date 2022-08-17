@@ -14,7 +14,7 @@ public class Main{
         vlr = sc.nextDouble();
 
         // Entrada de dados      
-        System.out.print("Digite a taxa: ");
+        System.out.print("Digite a taxa(%): ");
         taxa = sc.nextDouble();
 
         // Entrada de dados
