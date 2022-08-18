@@ -27,6 +27,6 @@ public class Main{
         long qtDias = ChronoUnit.DAYS.between(dtIn,dtHoje);
 
         // saida de dados
-        System.out.printf("A quantidade de tempo você já viveu em dias: %d.", qtDias);
+        System.out.printf("A quantidade de tempo você já viveu em dias é: %d.", qtDias);
     }
 }
