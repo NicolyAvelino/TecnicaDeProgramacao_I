@@ -1,4 +1,4 @@
-// Faça um  programa  na  Linguagem Java que  receba  2  números  e apresente a multiplicação dos dois números.
+//Objetivo: Faça um  programa  na  Linguagem Java que  receba  2  números  e apresente a multiplicação dos dois números.
 import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {

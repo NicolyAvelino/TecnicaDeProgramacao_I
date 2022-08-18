@@ -1,4 +1,4 @@
-// Faça  um programa  na  Linguagem Java que  receba  um  número  e mostre o resto da divisão por 6.
+// Objetivo: Faça  um programa  na  Linguagem Java que  receba  um  número  e mostre o resto da divisão por 6.
 import java.util.Scanner;
 public class Main{ 
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-// Faça  um programa  na  Linguagem Javapara  efetuar  o  cálculo  e  a apresentação  do  valor  de uma  prestação  em  atraso,  utilizando  a fórmula  PRESTAÇÃO  <--VALOR  +  (VALOR  *  (TAXA/100)  * TEMPO).
+// Objetivo: Faça  um programa  na  Linguagem Javapara  efetuar  o  cálculo  e  a apresentação  do  valor  de uma  prestação  em  atraso,  utilizando  a fórmula  PRESTAÇÃO  <--VALOR  +  (VALOR  *  (TAXA/100)  * TEMPO).
 import java.util.Scanner;
 public class Main{ 
 	public static void main(String[] args) {

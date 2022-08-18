@@ -1,4 +1,4 @@
-// Faça um programa na Linguagem Java para calcular e apresentar o valor do volume de uma lata de óleo, utilizando a fórmula: VOLUME <--3.14159 * RAIO2 * ALTURA.
+// Objetivo: Faça um programa na Linguagem Java para calcular e apresentar o valor do volume de uma lata de óleo, utilizando a fórmula: VOLUME <--3.14159 * RAIO2 * ALTURA.
 import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {       
