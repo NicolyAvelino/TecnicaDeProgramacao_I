@@ -1,4 +1,4 @@
-// Faça um programa na Linguagem Java que efetue a leitura de um número inteiro e apresentar uma mensagem informando se o número é par ou ímpar.
+//Objetivo: Faça um programa na Linguagem Java que efetue a leitura de um número inteiro e apresentar uma mensagem informando se o número é par ou ímpar.
 
 import java.util.Scanner;
 public class Main {

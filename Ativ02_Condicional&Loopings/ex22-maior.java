@@ -1,4 +1,4 @@
-// Faça um programa na Linguagem Java que leia 3 números inteiros e mostre o maior deles.
+// Objetivo: Faça um programa na Linguagem Java que leia 3 números inteiros e mostre o maior deles.
 
 import java.util.Scanner;
 public class Main {
@@ -22,10 +22,15 @@ public class Main {
         n3 = sc.nextInt();
 
 		// realizando operação
-        maior = (n1 + n2 + Math.abs(n1-n2))/2;
-        def = (maior + n3 + Math.abs(maior-n3))/2;
-        
-        // saida de dados
-	    System.out.printf("O maior número é: %d.",def);
+		if(n1 > n2 && n1 > n3){
+			// saida de dados
+	    	System.out.printf("O maior número é: %d.",n1);
+		} else if(n2 > n1 && n2 > n3){
+			// saida de dados
+	    	System.out.printf("O maior número é: %d.",n2);
+		} else{
+			// saida de dados
+	    	System.out.printf("O maior número é: %d.",n3);
+		}
 	}
 }
