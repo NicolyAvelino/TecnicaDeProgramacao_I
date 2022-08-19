@@ -15,7 +15,10 @@ public class Main {
 	public static void main(String[] args) {
 		// declaração de variável
 		int cd, qt;
-        double pagar, card;
+        double pg, preco;
+        
+        // Cardapio
+        System.out.println("CARDÁPIO \nEspecificação Código Preço \nCachorro quente 100 1.20 \nBauru simples 101 1.30 \nBauru com ovo 102 1.50 \nHambúrger 103 1.20 \nCheeseburguer 104 1.30 \nRefrigerante 105 1.00\n");
 
 		// cria um objeto scanner
 		Scanner sc = new Scanner(System.in);
@@ -28,19 +31,26 @@ public class Main {
         System.out.print("Digite a quantidade que deseja pedir: ");
 		qt = sc.nextInt();
 
-		// realizando operação
-        card = {
-            100: 1.20,
-            102: 1.30,
-            103: 1,20,
-            104: 1,30,
-            105: 1,00
+		// criando um Dictionary
+        if(cd == 100){
+            preco = 1.20;
+        } else if(cd == 101){
+            preco = 1.30;
+        } else if(cd == 102){
+            preco = 1.50;
+        }else if(cd == 103){
+            preco = 1.20;
+        }else if(cd == 104){
+            preco = 1.30;
+        }else{
+            preco = 1.00;
         }
         
-        // saida de dados
-        System.out.printf("O número %d é ímpar.",n1);
+        // calculando
+        pg = preco * qt;
         
-
+        // saida de dados
+        System.out.printf("Valor a ser pago: R$%.2f",pg);
 	}
 }
 
