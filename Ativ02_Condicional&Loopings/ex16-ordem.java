@@ -1,4 +1,4 @@
-// Faça um programa na Linguagem Java que leia 3 (três) valores inteiros e apresente os 3 números em ordem crescente.
+// Objetivo: Faça um programa na Linguagem Java que leia 3 (três) valores inteiros e apresente os 3 números em ordem crescente.
 
 import java.util.Scanner;
 import java.util.Arrays;
@@ -22,16 +22,11 @@ public class Main {
 		System.out.print("Digite o 3º numero: ");
         n3 = sc.nextInt();
 
-        int list[]= {n1,n2,n3};
-        
-		// realizando operação
-        Arrays.sort(list[]);
+        // realizando operação, colocando os valores em um vetor e usando sort para ordenar
+		int[] num = {n1,n2,n3};
+		Arrays.sort(num);
 
-        for(i=0; i < list.length;i++ ){
-            // saida de dados
-	        System.out.printf(list[i]);
-        }
-
-	    
+		// saida de dados
+		System.out.printf(Arrays.toString(num));	    
 	}
 }
