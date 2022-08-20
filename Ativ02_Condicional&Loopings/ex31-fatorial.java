@@ -3,21 +3,23 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		// declaração de variável
-		int n = 6;
-        int ft = n;
+		double num,ft;
 
 		// cria um objeto scanner
 		Scanner sc = new Scanner(System.in);
  
 		// receber valor do usuario
-        // System.out.print("Digite um número: ");
-		// n = sc.nextInt();
+        System.out.print("Digite um número: ");
+		num = sc.nextDouble();
+		
+		ft = num;
 
 		// realizando operação
-        while(n > 1){
-            ft = ft * (n -1);
+        while(num > 1){
+            ft = ft * (num - 1);
+			num--;
         }
         // saida de dados
-        System.out.printf("O fatorial do número %d é: %d.",n,ft);
+        System.out.printf("O fatorial do número é: %.2f.",ft);
 	}
 }
