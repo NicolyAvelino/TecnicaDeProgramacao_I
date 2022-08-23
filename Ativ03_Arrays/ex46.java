@@ -3,14 +3,14 @@
 // – Após a inserção, somente após a inserção mostrar o vetor.
 // Obs. Não efetuar a leitura de 10 elementos
 
-import java.util.Scanner;
+import java.util.Random;
 public class Main {
 	public static void main(String[] args) {
         // declarar array
         int colecao[] = new int[10];
 
-		// cria um objeto scanner
-		Scanner sc = new Scanner(System.in);
+        // numeros aleatorios
+        Random gr = new Random();
 
         // declarar variável i
         int i = 0;
@@ -18,8 +18,9 @@ public class Main {
         // fazendo a entrada de dados 
         System.out.printf("Entrada de Dados \n");
         while(i<colecao.length){
-            colecao[i++] = sc.nextInt(); 
+            colecao[i++] = gr.nextInt(26); 
         }
+        
         // saida de dados usando for
         System.out.printf("Valores inseridos: ");
         for(i=0; i < colecao.length; i++){
