@@ -17,7 +17,7 @@ public class Main {
         menor = num;   
 
         // realizando operação usando for
-        for(int i=2; i<11;i++){
+        for(int i=2; i<6;i++){
             // receber valores do usuario
             System.out.printf("Digite o %dº número: ",i);
             num = sc.nextInt();
