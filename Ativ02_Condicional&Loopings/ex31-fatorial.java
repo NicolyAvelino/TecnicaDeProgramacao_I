@@ -14,7 +14,7 @@ public class Main {
 		
 		ft = num;
 
-		// realizando operação
+		// realizando operação do fatorial
         while(num > 1){
             ft = ft * (num - 1);
 			num--;

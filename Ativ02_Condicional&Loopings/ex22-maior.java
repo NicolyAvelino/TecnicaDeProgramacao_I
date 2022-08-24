@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		// declaração de variáveis
-		int n1,n2, n3, maior, def;
+		int n1,n2, n3, maior;
 
 		// cria um objeto scanner
 		Scanner sc = new Scanner(System.in);

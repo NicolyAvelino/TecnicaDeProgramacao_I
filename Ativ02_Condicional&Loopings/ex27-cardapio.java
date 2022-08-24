@@ -31,7 +31,7 @@ public class Main {
         System.out.print("Digite a quantidade que deseja pedir: ");
 		qt = sc.nextInt();
 
-		// criando um Dictionary
+		// calculando usando if
         if(cd == 100){
             preco = 1.20;
         } else if(cd == 101){
@@ -46,7 +46,7 @@ public class Main {
             preco = 1.00;
         }
         
-        // calculando
+        // calculando total a pagar
         pg = preco * qt;
         
         // saida de dados

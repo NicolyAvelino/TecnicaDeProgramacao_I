@@ -30,3 +30,55 @@ public class Main {
 		System.out.printf(Arrays.toString(num));	    
 	}
 }
+// Segunda forma
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		// declaração de variáveis
+		int n1,n2, n3;
+
+		// cria um objeto scanner
+		Scanner sc = new Scanner(System.in);
+
+		// receber valor 1 do usuario
+        System.out.print("Digite o 1º numero: ");
+		n1 = sc.nextInt();
+
+		// receber valor 2 do usuario
+		System.out.print("Digite o 2º numero: ");
+        n2 = sc.nextInt();
+
+        // receber valor 3 do usuario
+		System.out.print("Digite o 3º numero: ");
+        n3 = sc.nextInt();
+
+        // realizando operação usando if else
+		if(n3 > n1){
+			if(n1 > n2){
+				// saida de dados
+				System.out.printf("Ordem crescente dos números: %d, %d, %d.",n2,n1,n3);
+			}else if(n2 < n3){
+				// saida de dados
+				System.out.printf("Ordem crescente dos números: %d, %d, %d.",n1,n2,n3);
+			} 
+			if(n1 > n2) {
+				if(n2 > n3){
+					// saida de dados
+					System.out.printf("Ordem crescente dos números: %d, %d, %d.",n3,n2,n1);
+				} else if(n3 < n1){
+					// saida de dados
+					System.out.printf("Ordem crescente dos números: %d, %d, %d.",n2,n3,n1);
+				} 
+			}
+			if(n1 < n2){
+				if(n3 < n1){
+					// saida de dados
+					System.out.printf("Ordem crescente dos números: %d, %d, %d.",n3,n1,n2);
+				} else if(n3 < n2){
+					// saida de dados
+					System.out.printf("Ordem crescente dos números: %d, %d, %d.",n1,n3,n2);
+				}
+			}
+		}
+	}
+}
