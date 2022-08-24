@@ -6,8 +6,8 @@
 import java.util.Random;
 public class Main {
 	public static void main(String[] args) {
-        // declarar array
-        int colecao[] = new int[10];
+        // declarar um vetor 
+        int vet[] = new int[10];
 
         // numeros aleatorios
         Random gr = new Random();
@@ -16,15 +16,13 @@ public class Main {
         int i = 0;
 
         // fazendo a entrada de dados 
-        System.out.printf("Entrada de Dados \n");
-        while(i<colecao.length){
-            colecao[i++] = gr.nextInt(26); 
+        while(i<vet.length){
+            vet[i++] = gr.nextInt(26); 
         }
-        
         // saida de dados usando for
         System.out.printf("Valores inseridos: ");
-        for(i=0; i < colecao.length; i++){
-            System.out.printf("%d ", colecao[i]);
+        for(i=0; i < vet.length; i++){
+            System.out.printf("%d ", vet[i]);
         }	    
 	}
 }

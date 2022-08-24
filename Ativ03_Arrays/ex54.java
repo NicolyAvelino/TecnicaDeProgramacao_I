@@ -23,13 +23,12 @@ public class Main {
         while(i<A.length){
             A[i++] = sc.nextInt(); 
         }
-        ft = num;
-
+        ft = B;
 		// realizando operação fatorial
-        while( > 1){
-            ft = ft * (num - 1);
-			num--;
-        }
+        // while( > 1){
+        //     ft = ft * (num - 1);
+		// 	num--;
+        // }
         // saida de dados usando for vetor A
         System.out.printf("Coleção A: ");
         for(i=0; i < A.length; i++){
@@ -38,7 +37,7 @@ public class Main {
         // Fatorial
         System.out.printf("\nFatorial: ");
         for(i=0; i < B.length; i++){
-            ft = ft * (A[i] - 1);
+            ft = ft * (B[i] - 1);
             System.out.printf("%d ", ft);
         }	    
 	}
