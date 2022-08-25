@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
         // declarar 
-        double nota1[] = new double[5];
-        double nota2[] = new double[5];
+        double nota1[] = new double[3];
+        double nota2[] = new double[3];
         double media;
 
 		// cria um objeto scanner
@@ -14,21 +14,23 @@ public class Main {
         int i = 0;
 
         // fazendo a entrada de dados nota 1
-        System.out.printf("Entrada de Dados nota 1: \n");
+        System.out.printf("Entrada de dados da nota 1º prova: \n");
         while(i<nota1.length){
             nota1[i++] = sc.nextDouble(); 
         }
         
+        int c = 0;
         // fazendo a entrada de dados nota 2
-        System.out.printf("Entrada de Dados nota 2:\n");
-        while(i<nota2.length){
+        System.out.printf("Entrada de dados da nota 2º prova: \n");
+        while(c<nota2.length){
             nota2[i++] = sc.nextDouble(); 
         }
-        media = (nota1 + nota2)/2;
+
         // saida de dados usando for coleção A
-        System.out.printf("Coleção A: ");
-        for(i=0; i < A.length; i++){
-            System.out.printf("%d ", A[i]);
+        // System.out.printf("Coleção A: ");
+        for(i=0; i < 3; i++){
+            media = (nota1[i] + nota2[i])/2;
+            System.out.printf("A média do aluno %d: %.2f.\n",i,media);
         }	
             
 	}

@@ -7,38 +7,34 @@
 import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
-        // declarar array
+        // declarar array e variavel
         int A[] = new int[5];
-        int B[] = A;
-        int ft;
+        int ft[] = new int[5];
+        int i = 0;
 
 		// cria um objeto scanner
 		Scanner sc = new Scanner(System.in);
-
-        // declarar variável i
-        int i = 0;
-
+    
         // fazendo a entrada de dados vetor A
-        System.out.printf("Entrada de Dados \n");
+        System.out.printf("Digite os valores: \n");
         while(i<A.length){
             A[i++] = sc.nextInt(); 
         }
-        ft = B;
-		// realizando operação fatorial
-        // while( > 1){
-        //     ft = ft * (num - 1);
-		// 	num--;
-        // }
+        
         // saida de dados usando for vetor A
-        System.out.printf("Coleção A: ");
+        System.out.printf("\nValores inseridos: ");
         for(i=0; i < A.length; i++){
             System.out.printf("%d ", A[i]);
-        }	
-        // Fatorial
+        }
+		// realizando operação fatorial e fazendo a saída do vetor B
         System.out.printf("\nFatorial: ");
-        for(i=0; i < B.length; i++){
-            ft = ft * (B[i] - 1);
-            System.out.printf("%d ", ft);
-        }	    
+        for(i=0; i < ft.length; i++){
+            for(ft[i] = 1; A[i] > 1; A[i]--){
+                // calculo fatorial              
+                ft[i] = ft[i] * A[i]; 
+            }
+            // saida de dados
+            System.out.printf("%d ", ft[i]);
+        }	        
 	}
 }
