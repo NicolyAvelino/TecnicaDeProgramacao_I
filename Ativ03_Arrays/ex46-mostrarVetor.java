@@ -12,16 +12,16 @@ public class Main {
         // numeros aleatorios
         Random gr = new Random();
 
-        // declarar variável i
-        int i = 0;
-
         // fazendo a entrada de dados 
-        while(i<vet.length){
-            vet[i++] = gr.nextInt(26); 
+        for(int i = 0; i < vet.length; i++){
+            // 26 é ate o valor onde é para pegar os números aleatórios
+            vet[i] = gr.nextInt(26); 
         }
+
         // saida de dados usando for
         System.out.printf("Valores inseridos: ");
-        for(i=0; i < vet.length; i++){
+        for(int i=0; i < vet.length; i++){
+            // saida de dados printf
             System.out.printf("%d ", vet[i]);
         }	    
 	}

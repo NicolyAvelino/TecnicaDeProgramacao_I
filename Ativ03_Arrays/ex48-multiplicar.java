@@ -15,22 +15,23 @@ public class Main {
 		// numeros aleatorios
         Random gr = new Random();
 
-        // declarar variável i
-        int i = 0;
-
         // fazendo a entrada de dados coleção A
-        System.out.printf("Entrada de Dados \n");
-        while(i<A.length){
-            A[i++] = gr.nextInt(26); 
+        for(int i = 0; i < A.length; i++){
+            // 26 é ate o valor onde é para pegar os números aleatórios
+            A[i] = gr.nextInt(26); 
         }
+        
         // saida de dados usando for coleção A
         System.out.printf("Coleção A: ");
-        for(i=0; i < A.length; i++){
+        for(int i=0; i < A.length; i++){
+            // saida de dados
             System.out.printf("%d ", A[i]);
         }	
+
         // colecao B (elementos coleção A multiplicado por 2)
         System.out.printf("\nColeção B: ");
-        for(i=0; i < B.length; i++){
+        for(int i=0; i < B.length; i++){
+            // saida de dados
             System.out.printf("%d ", A[i]*2);
         }	    
 	}
