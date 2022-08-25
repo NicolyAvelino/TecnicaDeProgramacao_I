@@ -2,36 +2,29 @@
 import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
-        // declarar 
-        double nota1[] = new double[3];
-        double nota2[] = new double[3];
-        double media;
+        // declarar vetores
+        double nota1[] = new double[5];
+        double nota2[] = new double[5];
 
 		// cria um objeto scanner
 		Scanner sc = new Scanner(System.in);
 
-        // declarar variável i
-        int i = 0;
-
         // fazendo a entrada de dados nota 1
         System.out.printf("Entrada de dados da nota 1º prova: \n");
-        while(i<nota1.length){
-            nota1[i++] = sc.nextDouble(); 
+        for(int i = 0; i < nota1.length; i++){
+            nota1[i] = sc.nextDouble(); 
         }
         
-        int c = 0;
         // fazendo a entrada de dados nota 2
         System.out.printf("Entrada de dados da nota 2º prova: \n");
-        while(c<nota2.length){
-            nota2[i++] = sc.nextDouble(); 
+        for(int i = 0; i < nota2.length; i++){
+            nota2[i] = sc.nextDouble(); 
         }
 
-        // saida de dados usando for coleção A
-        // System.out.printf("Coleção A: ");
-        for(i=0; i < 3; i++){
-            media = (nota1[i] + nota2[i])/2;
-            System.out.printf("A média do aluno %d: %.2f.\n",i,media);
-        }	
-            
+        // saida de dados com a media dos alunos  
+        for(int i=0; i < nota1.length; i++){
+            // coloquei o calculo diretamente no printf
+            System.out.printf("A média do %dº aluno: %.2f.\n",i+1,(nota1[i] + nota2[i])/2);
+        }	    
 	}
 }
