@@ -10,7 +10,6 @@ public class Main{
     // criação do metodo depositar
     public void valor(double valorDepositar){
         saldo += valorDepositar;
-        System.out.printf("Seu saldo atual é R$%.2f",saldo);
     }
     // criação do metodo saque do tipo boolean
     boolean saque(double qtSacar){
@@ -18,10 +17,8 @@ public class Main{
         if(saldo >= qtSacar){
             saldo -= qtSacar;
             return true;
-            System.out.print("Saque efetuado!");
         } else{ 
             return false 
-            System.out.print("Não foi possível realizar o saque!");
         }
     }
 }
