@@ -23,6 +23,7 @@ public class Main{
         aln.end = "Rua Eldorado, nº23";
         aln.curso = "DSM";
 
-        System.out.printf("Número do RA: %s\nNome: %s\nEndereço: %s\nCurso: %s",aln.RA,aln.nome, aln.end, aln.curso);
+        // saida de dados
+        System.out.printf("Nº do RA: %s\nNome: %s\nEndereço: %s\nCurso: %s",aln.RA,aln.nome, aln.end, aln.curso);
     }
 }
