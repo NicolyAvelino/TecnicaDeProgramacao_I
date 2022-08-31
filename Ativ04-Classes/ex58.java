@@ -1,42 +1,47 @@
 // Objetivo: No exercício anterior crie 2 métodos
-public class Main{
+public class ContaCorrente{
     // criação da classe
     // declarando dos atributos
-    private int nr_Conta;
-    private String nm_Cliente;
-    private int nr_CPF;
-    private double saldo;
+    int nr_Conta;
+    String nm_Cliente;
+    String nr_CPF;
+    double saldo;
 
     // criação do metodo depositar
-    public void valor(double valorDepositar){
+    public void deposito(double valorDepositar){
         saldo += valorDepositar;
     }
     // criação do metodo saque do tipo boolean
-    boolean saque(double qtSacar){
+    public boolean saque(double qtSacar){
         // tem saldo na conta
         if(saldo >= qtSacar){
             saldo -= qtSacar;
             return true;
         } else{ 
-            return false 
+            return false;
         }
     }
 }
 
-
-// Instanciar
+// Instanciar na Main
 public class Main{
-    public static void main(Strin[] args){
+    public static void main(String[] args){
         ContaCorrente cc = new ContaCorrente();
 
+        // entrada de dados
         cc.nr_Conta = 1234;
         cc.nm_Cliente = "Maria da Silva";
-        cc.nr_CPF = 87654323499;
+        cc.nr_CPF = "87654323499";
         cc.saldo = 2000;
-        cc.saque(20);
-        cc.valor(200);
+        
+        // valores metodos 
+        cc.deposito(200);
+        cc.saque(300);
 
-        System.out.printf("Número da Conta: %f\nNome Cliente: %s\nNúmero CPF: %d\n Saldo: %f",cc.nr_Conta,cc.nm_Cliente,cc.nr_CPF,cc.saldo);
+        // saida de dados
+        System.out.printf("Realizado o depósito de R$ %.2f. Seu saldo é R$ %.2f.",cc.deposito,cc.saldo);
+        System.out.printf("Realizado o saque de R$ %.2f. Seu saldo é R$ %.2f.",cc.saque, cc.saldo);
+        System.out.printf("Número da Conta: %d\nNome Cliente: %s\nNúmero CPF: %s\nSaldo: %.2f",cc.nr_Conta,cc.nm_Cliente,cc.nr_CPF,cc.saldo);
        
     }
 }

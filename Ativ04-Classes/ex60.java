@@ -2,32 +2,32 @@
 public class Aluno{
     // criação da classe
     // declarando dos atributos
-    private int RA;
-    private String nome;
-    private String end;
-    private String curso;
+    String RA;
+    String nome;
+    String end;
+    String curso;
 
     // declarando primeiro método
-    public void pegarEnd(){
-        return end;
+    public void consultarEnd(String endereco){
+        return endereco;
     }
 
     // declarando segundo método
-    public void nmCurso(){
-        return curso;
+    public void consultarCurso(String nomeCurso){
+        return nomeCurso;
     }
 }
 
 // Instanciar
 public class Main{
-    public static void main(Strin[] args){
+    public static void main(String[] args){
         Aluno aln = new Aluno();
 
-        aln.RA = 12345678909;
+        aln.RA = "12345678909";
         aln.nome = "Maria da Silva";
-        aln.pegarEnd("Rua Eldorado");
-        aln.nmCurso("DSM");
+        aln.consultarEnd("Rua Eldorado");
+        aln.consultarCurso("DSM");
 
-        System.out.printf("Número do RA: %d\nNome: %s\nEndereço: %s\n Curso: %s",aln.RA,aln.nome, aln.pegarEnd(), aln.nmCurso());
+        System.out.printf("Número do RA: %s\nNome: %s\nEndereço: %s\n Curso: %s",aln.RA,aln.nome);
     }
 }

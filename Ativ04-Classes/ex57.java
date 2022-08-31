@@ -7,22 +7,22 @@
 public class ContaCorrente{
     // criação da classe
     // declarando dos atributos
-    private int nr_Conta;
-    private String nm_Cliente;
-    private int nr_CPF;
-    private double saldo;
+    int nr_Conta;
+    String nm_Cliente;
+    String nr_CPF;
+    double saldo;
 }
 
 // Instanciar
 public class Main{
-    public static void main(Strin[] args){
+    public static void main(String[] args){
         ContaCorrente cc = new ContaCorrente();
 
         cc.nr_Conta = 1234;
         cc.nm_Cliente = "Maria da Silva";
-        cc.nr_CPF = 87654323499;
+        cc.nr_CPF = "87654323499";
         cc.saldo = 2000;
 
-        System.out.printf("Número da Conta: %f\nNome Cliente: %s\nNúmero CPF: %d\n Saldo: %f",cc.nr_Conta,cc.nm_Cliente,cc.nr_CPF,cc.saldo);
+        System.out.printf("Número da Conta: %d\nNome Cliente: %s\nNúmero CPF: %s\nSaldo: %.2f",cc.nr_Conta,cc.nm_Cliente,cc.nr_CPF,cc.saldo);
     }
 }

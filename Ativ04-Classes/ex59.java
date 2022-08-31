@@ -7,22 +7,22 @@
 public class Aluno{
     // criação da classe
     // declarando dos atributos
-    private int RA;
-    private String nome;
-    private String end;
-    private String curso;
+    String RA;
+    String nome;
+    String end;
+    String curso;
 }
 
 // Instanciar
 public class Main{
-    public static void main(Strin[] args){
+    public static void main(String[] args){
         Aluno aln = new Aluno();
 
-        aln.RA = 12345678909;
+        aln.RA = "12345678909";
         aln.nome = "Maria da Silva";
         aln.end = "Rua Eldorado, nº23";
         aln.curso = "DSM";
 
-        System.out.printf("Número do RA: %d\nNome: %s\nEndereço: %s\n Curso: %s",aln.RA,aln.nome, aln.end, aln.curso);
+        System.out.printf("Número do RA: %s\nNome: %s\nEndereço: %s\nCurso: %s",aln.RA,aln.nome, aln.end, aln.curso);
     }
 }
