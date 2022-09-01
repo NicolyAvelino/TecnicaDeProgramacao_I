@@ -15,15 +15,15 @@ public class Retangulo{
     double altura=4.00;
 
     // criando o método area()
-    public void area(){
+    public double area(){
         return largura * altura;
     }
     // criando o método perimetro()
-    public void perimetro(){
+    public double perimetro(){
         return 2 * (largura + altura);
     }
     // criando o método diagonal()
-    public void diagonal(){
+    public double diagonal(){
         return Math.sqrt(Math.pow(altura,2) + Math.pow(largura,2));
     }
 }
@@ -38,7 +38,7 @@ public class Main{
         rt.diagonal();
 
         // saida de dados
-        System.out.print("AREA = %.2f \nPERIMETRO = %.2f \nDIAGONAL = %.2f",rt.area(),rt.perimetro(),rt.diagonal());
+        System.out.printf("AREA = %.2f \nPERIMETRO = %.2f \nDIAGONAL = %.2f",rt.area(),rt.perimetro(),rt.diagonal());
 
     }
 }
