@@ -7,10 +7,7 @@
 public class Aluno{
     // criação da classe
     // declarando dos atributos
-    String RA;
-    String nome;
-    String end;
-    String curso;
+    String RA, nome, end, curso;
 }
 
 // Instanciar

@@ -1,20 +1,17 @@
-// Objetivo:  No exercício anterior crie 2 método
+// Objetivo:  No exercício anterior(ex59) crie 2 método
 public class Aluno{
     // criação da classe
     // declarando dos atributos
-    String RA;
-    String nome;
-    String end;
-    String curso;
+    String RA, nome, end, curso;
 
     // declarando primeiro método
-    public void consultarEnd(String endereco){
-        return endereco;
+    public String consultarEnd() {
+        System.out.printf("Endereço do aluno %s.",end);
     }
 
     // declarando segundo método
-    public void consultarCurso(String nomeCurso){
-        return nomeCurso;
+    public String consultarCurso() {
+        System.out.printf("O aluno está matriculado no curso: %s.",curso);
     }
 }
 
@@ -25,9 +22,9 @@ public class Main{
 
         aln.RA = "12345678909";
         aln.nome = "Maria da Silva";
-        aln.consultarEnd("Rua Eldorado");
-        aln.consultarCurso("DSM");
+        aln.end = "Rua Eldorado";
+        aln.curso = "DSM";
 
-        System.out.printf("Número do RA: %s\nNome: %s\nEndereço: %s\n Curso: %s",aln.RA,aln.nome);
+        System.out.printf("Número do RA: %s\nNome:\n",aln.RA,aln.nome);
     }
 }
