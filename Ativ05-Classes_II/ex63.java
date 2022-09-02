@@ -11,8 +11,8 @@
 // Diagonal d = raiz a² + b²
 public class Retangulo{
     // declarando os atributos
-    double largura=3.00;
-    double altura=4.00;
+    double largura;
+    double altura;
 
     // criando o método area()
     public double area(){
@@ -27,12 +27,23 @@ public class Retangulo{
         return Math.sqrt(Math.pow(altura,2) + Math.pow(largura,2));
     }
 }
-
+import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
+        // declarando scanner e retangulo
+        Scanner sc = new Scanner(System.in);
         Retangulo rt = new Retangulo();
+
         // entrada de dados
+        System.out.print("Digite um valor para a altura: ");
+        double alt = sc.nextDouble();
+
+        System.out.print("Digite um valor para a largura: ");
+        double larg = sc.nextDouble();
         
+        rt.altura = alt;
+        rt.largura = larg;
+
         rt.area();
         rt.perimetro();
         rt.diagonal();
