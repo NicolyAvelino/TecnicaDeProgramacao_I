@@ -6,25 +6,45 @@ public class Aluno{
 
     // declarando primeiro método
     public String consultarEnd() {
-        System.out.printf("Endereço do aluno %s.",end);
+        // System.out.printf("Endereço do aluno %s.",end);
+        return end;
     }
 
     // declarando segundo método
     public String consultarCurso() {
-        System.out.printf("O aluno está matriculado no curso: %s.",curso);
+        // System.out.printf("O aluno está matriculado no curso: %s.",curso);
+        return curso;
     }
 }
 
 // Instanciar
+import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
+        // declarando aluno e scanner
         Aluno aln = new Aluno();
+        Scanner sc = new Scanner(System.in);
 
-        aln.RA = "12345678909";
-        aln.nome = "Maria da Silva";
-        aln.end = "Rua Eldorado";
-        aln.curso = "DSM";
+        // entrada de dados
+        System.out.print("Ra: ");
+        String nr_RA = sc.nextLine();
+        aln.RA = nr_RA;
 
-        System.out.printf("Número do RA: %s\nNome:\n",aln.RA,aln.nome);
+        System.out.print("Nome: ");
+        String nm_Aluno = sc.nextLine();
+        aln.nome = nm_Aluno;
+
+        System.out.print("Endereço: ");
+        String endereco = sc.nextLine();
+        aln.end = endereco;
+
+        System.out.print("Curso: ");
+        String nm_Curso = sc.nextLine();
+        aln.curso = nm_Curso;
+
+        aln.consultarEnd();
+        aln.consultarCurso();
+        
+        System.out.printf("\nNúmero do RA: %s\nNome:\nEndereço: \nNome do Curso: ",aln.RA,aln.nome,aln.consultarEnd(), aln.consultarCurso());
     }
 }

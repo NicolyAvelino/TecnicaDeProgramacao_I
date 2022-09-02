@@ -16,27 +16,40 @@ public class Funcionario{
     // }
     // declarando método aumentarSalario(porcentagem: double)
     public void aumentarSalario(double porcentagem){
-        porcentagem = salarioBruto * (porcentagem/100);
+        salarioBruto = salarioBruto * (porcentagem/100);
     }
 }
+
 
 import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
+        // declarando funcionario e scanner
         Funcionario fc = new Funcionario();
-
         Scanner sc = new Scanner(System.in);
 
         // entrada de dados
-        fc.nome = "Joao Silva";
-        fc.salarioBruto = 5000.00;
-        fc.desconto = 1000.00;
+        System.out.print("Nome: ");
+        String nm = sc.nextLine();
+        fc.nome = nm;
+
+        System.out.print("Salário Bruto: ");
+        double sB = sc.nextDouble();
+        fc.salarioBruto = sB;
+
+        System.out.print("Desconto: ");
+        double dct = sc.nextDouble();
+        fc.desconto = dct;
+
+        // fc.nome = "Joao Silva";
+        // fc.salarioBruto = 5000.00;
+        // fc.desconto = 1000.00;
 
         // saida de dados
-        System.out.printf("Nome: %s\nSalário Bruto: %.2f \nDesconto: %.2f \nDados do Funcionário: %s, R$ %.2f\n",fc.nome,fc.salarioBruto,fc.desconto,fc.nome,fc.salarioBruto);
+        System.out.printf("Dados do Funcionário: %s, R$ %.2f",fc.nome,fc.salarioBruto);
 
         // entrada de dados para aumentar salario
-        System.out.print("Deseja aumentar o salário em qual porcentagem? ");
+        System.out.print("\nDeseja aumentar o salário em qual porcentagem? ");
         double vlrPorcentagem = sc.nextDouble();
         fc.aumentarSalario(vlrPorcentagem);
 

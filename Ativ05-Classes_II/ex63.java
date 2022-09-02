@@ -35,10 +35,9 @@ public class Main{
         Retangulo rt = new Retangulo();
 
         // entrada de dados
-        System.out.print("Digite um valor para a altura: ");
+        System.out.print("Digite um valor para a altura e largura: ");
         double alt = sc.nextDouble();
 
-        System.out.print("Digite um valor para a largura: ");
         double larg = sc.nextDouble();
         
         rt.altura = alt;
