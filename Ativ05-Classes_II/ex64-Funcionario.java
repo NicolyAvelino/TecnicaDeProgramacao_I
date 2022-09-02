@@ -9,17 +9,17 @@
 public class Funcionario{
     // declarando os atributos
     String nome;
-    double salarioBruto, desconto;
+    double salarioBruto, desconto,porcentagem;
 
     // declarando método salarioLiquido()
-    // public double salarioLiquido(){
-    // }
+    public double salarioLiquido(){
+        return salarioBruto - desconto;
+    }
     // declarando método aumentarSalario(porcentagem: double)
-    public void aumentarSalario(double porcentagem){
-        salarioBruto = salarioBruto * (porcentagem/100);
+    public double aumentarSalario(){
+        return salarioBruto + (salarioBruto * (porcentagem/100));
     }
 }
-
 
 import java.util.Scanner;
 public class Main{
@@ -46,14 +46,14 @@ public class Main{
         // fc.desconto = 1000.00;
 
         // saida de dados
-        System.out.printf("Dados do Funcionário: %s, R$ %.2f",fc.nome,fc.salarioBruto);
+        System.out.printf("Dados do Funcionário: %s, R$ %.2f\nSálario Liquido: %.2f",fc.nome,fc.salarioBruto,fc.salarioLiquido());
 
         // entrada de dados para aumentar salario
         System.out.print("\nDeseja aumentar o salário em qual porcentagem? ");
         double vlrPorcentagem = sc.nextDouble();
-        fc.aumentarSalario(vlrPorcentagem);
+        fc.porcentagem = vlrPorcentagem;
 
         // saida de dados
-        System.out.printf("Dados do Funcionário: %s, R$ %.2f",fc.nome,fc.salarioBruto);        
+        System.out.printf("Dados do Funcionário: %s, R$ %.2f",fc.nome,fc.aumentarSalario());        
     }
 }

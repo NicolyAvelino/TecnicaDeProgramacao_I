@@ -1,4 +1,4 @@
-// Objetivo: No exercício anterior crie 2 métodos
+// Objetivo: No exercício anterior(ex57) crie 2 métodos
 public class ContaCorrente{
     // criação da classe
     // declarando dos atributos

@@ -6,13 +6,11 @@ public class Aluno{
 
     // declarando primeiro método
     public String consultarEnd() {
-        // System.out.printf("Endereço do aluno %s.",end);
         return end;
     }
 
     // declarando segundo método
     public String consultarCurso() {
-        // System.out.printf("O aluno está matriculado no curso: %s.",curso);
         return curso;
     }
 }
@@ -41,10 +39,7 @@ public class Main{
         System.out.print("Curso: ");
         String nm_Curso = sc.nextLine();
         aln.curso = nm_Curso;
-
-        aln.consultarEnd();
-        aln.consultarCurso();
         
-        System.out.printf("\nNúmero do RA: %s\nNome:\nEndereço: \nNome do Curso: ",aln.RA,aln.nome,aln.consultarEnd(), aln.consultarCurso());
+        System.out.printf("\nNúmero do RA: %s\nNome: %s\nEndereço: %s \nNome do Curso: %s",aln.RA,aln.nome,aln.consultarEnd(), aln.consultarCurso());
     }
 }
