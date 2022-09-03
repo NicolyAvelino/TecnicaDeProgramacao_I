@@ -40,6 +40,6 @@ public class Main{
         String nm_Curso = sc.nextLine();
         aln.curso = nm_Curso;
         
-        System.out.printf("\nNúmero do RA: %s\nNome: %s\nEndereço: %s \nNome do Curso: %s",aln.RA,aln.nome,aln.consultarEnd(), aln.consultarCurso());
+        System.out.printf("\nDados do Aluno: \nNúmero do RA: %s\nNome: %s\nEndereço: %s \nNome do Curso: %s",aln.RA,aln.nome,aln.consultarEnd(), aln.consultarCurso());
     }
 }

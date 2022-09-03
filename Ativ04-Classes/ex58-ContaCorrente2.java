@@ -1,7 +1,7 @@
 // Objetivo: No exercício anterior(ex57) crie 2 métodos
 public class ContaCorrente{
     // criação da classe
-    // declarando dos atributos
+    // declarando os atributos
     int nr_Conta;
     String nm_Cliente;
     String nr_CPF;
