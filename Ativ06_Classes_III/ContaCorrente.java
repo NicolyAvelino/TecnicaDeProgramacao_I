@@ -75,9 +75,8 @@ public class ContaCorrente{
         }
     }
     // método ver saldo atual na conta
-    public String verSaldo(){
-        System.out.printf("Saldo Atual R$ %.2f: " + getSaldo());  
-
+    public void verSaldo(){
+        System.out.println("Saldo Atual R$ " + getSaldo());
     }
     // método depositar na conta
     public double depositar(double vlrDep){
@@ -95,7 +94,7 @@ public class TestaConta{
         // entrada de dados conta 1
         conta1.nome = "Fernando";
         conta1.nr_Conta = "1234";
-        conta1.conjunta = 'nao';
+        conta1.conjunta = "Nao";
         conta1.saldo = 1500.00;
         conta1.sexo = "Masculino";
         conta1.idade = 29;
@@ -103,7 +102,7 @@ public class TestaConta{
         // entrada de dados conta 2
         conta2.nome = "Maria";
         conta2.nr_Conta = "5321";
-        conta2.conjunta = 'sim';
+        conta2.conjunta = "Sim";
         conta2.saldo = 530.31;
         conta2.sexo = "Feminino";
         conta2.idade = 45;
@@ -111,18 +110,18 @@ public class TestaConta{
         // entrada de dados conta 3
         conta3.nome = "Joao";
         conta3.nr_Conta = "9621";
-        conta3.conjunta = 'sim';
+        conta3.conjunta = "Sim";
         conta3.saldo = 4325.12;
         conta3.sexo = "Masculino";
         conta3.idade = 54;
 
         // saida de dados conta 1
-        System.out.printf("Nome: %s\nNum Conta: %d \nConjunta? %s \nSaldo: R% %.2f \nSexo: %s \nIdade: %d",conta1.nome,conta1.nr_Conta,conta1.conjunta,conta1.saldo,conta1.sexo,conta1.idade);
+        System.out.printf("Nome: %s\nNum Conta: %s \nConjunta? %s \nSaldo: R$ %.2f \nSexo: %s \nIdade: %d\n",conta1.nome,conta1.nr_Conta,conta1.conjunta,conta1.saldo,conta1.sexo,conta1.idade);
 
         // saida de dados conta 2
-        System.out.printf("Nome: %s\nNum Conta: %d \nConjunta? %s \nSaldo: R% %.2f \nSexo: %s \nIdade: %d",conta2.nome,conta2.nr_Conta,conta2.conjunta,conta2.saldo,conta2.sexo,conta2.idade);
+        System.out.printf("\nNome: %s\nNum Conta: %s \nConjunta? %s \nSaldo: R$ %.2f \nSexo: %s \nIdade: %d\n",conta2.nome,conta2.nr_Conta,conta2.conjunta,conta2.saldo,conta2.sexo,conta2.idade);
 
         // saida de dados conta 3
-        System.out.printf("Nome: %s\nNum Conta: %d \nConjunta? %s \nSaldo: R% %.2f \nSexo: %s \nIdade: %d",conta3.nome,conta3.nr_Conta,conta3.conjunta,conta3.saldo,conta3.sexo,conta3.idade);
+        System.out.printf("\nNome: %s\nNum Conta: %s \nConjunta? %s \nSaldo: R$ %.2f \nSexo: %s \nIdade: %d",conta3.nome,conta3.nr_Conta,conta3.conjunta,conta3.saldo,conta3.sexo,conta3.idade);
     }
 }

@@ -59,7 +59,7 @@ public class Aluno{
 
     // metodo para mostrar os dados
     public String toString(){
-        System.out.printf("Nome: %s\nMatrícula: %s\nNota1: %.2f \nNota2: %.2f \nMédia Final: %.2f.",getNome(),getMatricula(),getNota1(),getNota2(),calcularMediaFinal());
+        return "Nome: " + getNome() + "\nMatrícula: " + getMatricula() + "\nNota1: " + getNota1() + "\nNota2: "+ getNota2() + "\nMédia Final: " + calcularMediaFinal();
     }
    
     // metodo para calcular media
@@ -80,8 +80,9 @@ public class Aluno{
 public class Main{
     public static void main(String[] args){
         // instanciar classe aluno e passar valores por parametro
-        Aluno aln = new Aluno("Nicoly","12345",6.5,8.2,6);
+        Aluno aln = new Aluno("Nicoly","123456789",6.5,8.2,0);
 
-        aln.toString();
+        // saida de dados
+        System.out.println(aln.toString());
     }
 }
