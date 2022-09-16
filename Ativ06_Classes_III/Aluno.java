@@ -1,4 +1,17 @@
 // Questao 68
+// Objetivo: Implemente um código possível para a classe da figura abaixo:
+// Aluno
+// - nome: String
+// - matricula : String
+// - nota1: double
+// - nota2: double
+// - notaReavaliacao: double
+// ---------------------------------------------------------
+// + Aluno()
+// + Aluno(String nome, String matricula, double nota1, double nota2, double notaReavaliacao)
+// + toString(): String
+// + calcularMedia(): double
+// + calcularMediaFinal(): double
 public class Aluno{
     // declarando atributos
     private String nome, matricula;
