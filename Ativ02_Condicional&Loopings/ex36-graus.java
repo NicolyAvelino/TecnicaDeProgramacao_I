@@ -19,3 +19,16 @@ public class Main {
         }            
 	}
 }
+// Usando FOR
+public class Main {
+	public static void main(String[] args) {
+        // usando for para repretição
+        for(int i=10; i<=100; i=i+10){
+            // formula da conversao
+            int f = (9 * i + 160) / 5;
+            
+            // saida de dados      
+            System.out.printf("%d°C => %d°F\n", i,f);
+        }          
+	}
+}

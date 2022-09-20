@@ -76,3 +76,38 @@ public class Main {
 		}
 	}
 }
+// outra forma
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args){
+		// declarando as variaveis
+		int n1,n2,n3,aux;
+		Scanner sc = new Scanner(System.in);
+
+		// entrada de dados
+		System.out.print("Digite o primeiro número: ");
+		n1 = sc.nextInt();
+		System.out.print("Digite o segundo número: ");
+		n2 = sc.nextInt();
+		System.out.print("Digite o terceiro número: ");
+		n3 = sc.nextInt();
+
+		// processamento
+		if(n1>n2){
+			aux = n1;
+			n1 = n2;
+			n2 = aux;
+		}
+		if(n2>n3){
+			aux = n2;
+			n2 = n3;
+			n3 = n2;
+		}
+		if(n1>n3){
+			aux = n1;
+			n1 = n3;
+			n3 = n1;
+		}
+		System.out.println("O primeiro número é: "+ n1 + "\nO segundo número é: "+ n2 + "\nO terceiro número é: "+ n3);
+	}
+}

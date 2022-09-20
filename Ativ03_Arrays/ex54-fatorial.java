@@ -38,3 +38,34 @@ public class Main {
         }	        
 	}
 }
+// outra forma
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        int a[] = new int[5];
+        int b[] = new int[5];
+        int fat;
+        Scanner sc = new Scanner(System.in);
+        // entrada de dados
+        for(int i=0; i<a.length; i++){
+            System.out.println("Digite um número para cálculo de Fatorial: ");
+            a[i] = sc.nextInt();
+        }
+        // carregar os valores para o vetor b
+        for(int i=0; i<a.length; i++){
+            b[i] = a[i];
+        }
+        // calculo fatorial
+        for(int i=0; i<b.length; i++){
+            fat = 1;
+            for(int j=1; j<=b[i]; j++){
+                fat = fat * j;
+            }
+            b[i] = fat;
+        }
+        // saida
+        for(int i=0; i<a.length; i++){
+             System.out.println("Número: "+ a[i] + " Fatorial: "+ b[i]);
+        }
+    }
+}
