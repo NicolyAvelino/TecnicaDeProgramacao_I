@@ -53,7 +53,7 @@ public class Aluno{
         return n1 + n2 + n3;
     }
 
-    // metodo para retornar se o aluno foi APROVADO( que é 60% da nota)
+    // metodo para retornar se o aluno foi APROVADO( que é 60% da nota) ou REPROVADO
     public double calcularMediaFinal(){
         if(calcularMedia() >= 60){
             return calcularMedia();
@@ -75,7 +75,7 @@ public class Aluno{
 
 public class Main{
     public static void main(String[] args){
-        // instanciar classes aluno e passar valores por parametro
+        // instanciar classes aluno e passar os valores por parametro
         Aluno aln = new Aluno("João Pedro",27.00,31.00,32.00);
         
         Aluno aln2 = new Aluno("João Pedro",17.00,20.00,15.00);
