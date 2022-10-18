@@ -29,7 +29,7 @@ public class Veiculo{
         return ano;
     }
     public void exibirDados(){
-
+        System.out.println("Placa: " + placa + "Ano: " + ano);
     }
 
 }
@@ -49,7 +49,7 @@ public class Onibus extends Veiculo{
         return assentos;
     }
     public void exibirDados(){
-
+        System.out.println("Assentos: " + assentos);
     }
 }
 
@@ -68,6 +68,6 @@ public class Caminhao extends Veiculo{
         return eixos;
     }
     public void exibirDados(){
-        
+        System.out.println("Eixos: " + eixos);
     }
 }
