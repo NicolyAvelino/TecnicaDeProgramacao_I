@@ -1,3 +1,4 @@
+package Figura;
 public abstract class Figura{
     private String cor;
 

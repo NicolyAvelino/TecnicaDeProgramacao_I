@@ -1,9 +1,10 @@
+package Figura;
 public class Circulo extends Figura{
     private double raio;
 
-    public Circulo(double raio, String cor){
-        this.raio = raio;
+    public Circulo(String cor, double raio){
         super(cor);
+        this.raio = raio;
     }
 
     // Métodos get e set de raio

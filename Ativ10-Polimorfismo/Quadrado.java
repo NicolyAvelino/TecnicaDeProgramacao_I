@@ -1,7 +1,8 @@
+package Figura;
 public class Quadrado extends Retangulo{
     // construtor
-    public Quadrado(double lado, String cor){
-        super(cor, lado1, lado2);
+    public Quadrado(String cor, double lado){
+        super(cor, lado, lado);
     }
     // metodo toString
     @Override

@@ -1,18 +1,19 @@
+package Figura;
 public class Triangulo extends Figura{
     private double base, altura;
 
     // construtor
-    public Triangulo(double base, double altura, String cor){
+    public Triangulo(String cor, double base, double altura){
+        super(cor);
         this.base = base;
         this.altura = altura;
-        super(cor);
     }
 
     // Métodos get e set de base
     public void setBase(double base){
         this.base = base;
     }
-    public String getBase(){
+    public double getBase(){
         return base;
     }
 
@@ -20,7 +21,7 @@ public class Triangulo extends Figura{
     public void setAltura(double altura){
         this.altura = altura;
     }
-    public String getAltura(){
+    public double getAltura(){
         return altura;
     }
 

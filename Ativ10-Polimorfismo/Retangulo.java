@@ -1,11 +1,12 @@
+package Figura;
 public class Retangulo extends Figura{
     private double lado1, lado2;
 
     // construtor 
-    public Retangulo(double lado1, double lado2, String cor){
+    public Retangulo(String cor, double lado1, double lado2){
+        super(cor);
         this.lado1 = lado1;
         this.lado2 = lado2;
-        super(cor);
     }
 
     // Métodos get e set de lado1
@@ -31,6 +32,6 @@ public class Retangulo extends Figura{
     // metodo toString
     @Override
     public String toString(){
-        return "Retângulo \nLado 1: " + lado1 + "\tLado 2: " + lado2 + "\tÁrea: " + area();
+        return "Retângulo \nLado 1: " + lado1 + "\tLado 2: " + lado2 + "\tÁrea: " + area() + "\tCor " + getCor();
     }
 }
